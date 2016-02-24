@@ -17,7 +17,7 @@
 #Uncomment the line below if you have a barebones Ubuntu system only
 sudo apt-get install build-essential gfortran dh-autoreconf git cvs libx11-dev libpng12-dev csh swig python-dev python python-numpy libltdl-dev
 
-#Uncomment the line below if you have a barebones Ubuntu system only
+#Uncomment the line below if you have a barebones Fedora system only
 #sudo yum install build-essential gfortran dh-autoreconf git cvs libx11-dev libpng12-dev csh swig python-dev python python-numpy libltdl-dev
 
 ###
