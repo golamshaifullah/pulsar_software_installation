@@ -128,6 +128,7 @@ echo 'export TEMPO=/usr/local/src/tempo' >> ~/.bashrc
 cd /usr/local/src
 #This should be your fall back and is not gauranteed to work
 #cvs -z3 -d:pserver:anonymous@tempo2.cvs.sourceforge.net:/cvsroot/tempo2 co -P tempo2
+#This is for the last 'stable' release of tempo2
 git clone https://bitbucket.org/psrsoft/tempo2.git
 cd tempo2
 ./bootstrap
