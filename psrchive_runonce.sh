@@ -15,7 +15,7 @@
 ###
 
 #Uncomment the line below if you have a barebones Ubuntu system only
-sudo apt-get install build-essential gfortran dh-autoreconf git cvs libx11-dev libpng12-dev csh swig python-dev python python-numpy libltdl-dev
+#sudo apt-get install build-essential gfortran dh-autoreconf git cvs libx11-dev libpng12-dev csh swig python-dev python python-numpy libltdl-dev
 
 #Uncomment the line below if you have a barebones Fedora system only
 #sudo yum install build-essential gfortran dh-autoreconf git cvs libx11-dev libpng12-dev csh swig python-dev python python-numpy libltdl-dev
@@ -63,7 +63,7 @@ cd fftw-3.3.4
 make
 make install
 
-./configure­--enable-shared
+./configure --enable-shared
 make clean
 make
 make install
@@ -84,7 +84,7 @@ wget ftp://ftp.astro.caltech.edu/pub/pgplot/pgplot5.2.tar.gz;
 tar -xzf pgplot5.2.tar.gz;
 cd pgplot;
 patch < /usr/local/src/psrchive/packages/makemake.sharedcpg.patch;
-mkdir ­p /usr/local/share/pgplot;
+mkdir -p /usr/local/share/pgplot;
 cp drivers.list /usr/local/share/pgplot/;
 cd /usr/local/share/pgplot;
 #edit the /usr/local/share/pgplot/drivers.list file to include whatever drivers you want. 
@@ -128,7 +128,8 @@ echo 'export TEMPO=/usr/local/src/tempo' >> ~/.bashrc
 cd /usr/local/src
 #This should be your fall back and is not gauranteed to work
 #cvs -z3 -d:pserver:anonymous@tempo2.cvs.sourceforge.net:/cvsroot/tempo2 co -P tempo2
-#This is for the last 'stable' release of tempo2
+
+#The line below is for the last 'stable' release of tempo2
 git clone https://bitbucket.org/psrsoft/tempo2.git
 cd tempo2
 ./bootstrap
@@ -141,7 +142,6 @@ make
 make plugins
 make install
 make plugins-install
-
 
 #install psrchive:
 cd /usr/local/src/psrchive
